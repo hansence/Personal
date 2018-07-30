@@ -59,8 +59,13 @@ li > ol {
 /**
  * Headings
  */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 400; }
+h1, h2, h3 {
+  font-weight: 400;
+  color: #262626; }
+
+h4, h5, h6 {
+  font-weight: 400;
+  color: #4d4d4d; }
 
 /**
  * Links
@@ -280,8 +285,7 @@ pre {
     margin-bottom: 30px; }
 
 .post-meta {
-  font-size: 14px;
-  color: #828282; }
+  font-size: 14px; }
 
 .post-link {
   display: block;
@@ -301,7 +305,7 @@ pre {
     .post-title {
       font-size: 36px; } }
 
-.post-content {
+/*.post-content {
   margin-bottom: 30px; }
   .post-content h2 {
     font-size: 32px; }
@@ -317,7 +321,7 @@ pre {
     font-size: 20px; }
     @media screen and (max-width: 800px) {
       .post-content h4 {
-        font-size: 18px; } }
+        font-size: 18px; } }*/
 
 /**
  * Syntax highlighting styles
