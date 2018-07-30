@@ -113,6 +113,7 @@ pre {
  */
 
 .wrapper {
+  position: relative;
   max-width: -webkit-calc(800px - (30px * 2));
   max-width: calc(800px - (30px * 2));
   margin-right: auto;
@@ -136,7 +137,7 @@ pre {
   margin-right: auto;
   margin-left: auto;
   padding-right: 0px;
-  padding-left: 0px; }
+  padding-left: 0px;  }
 
 
 /**
@@ -206,10 +207,12 @@ pre {
  * Site footer
  */
 .site-footer {
+  position: relative;
   border-top: 1px solid #e8e8e8;
   padding: 30px 0; }
 
 .footer-heading {
+  position: relative;
   font-size: 18px;
   margin-bottom: 15px; }
 
@@ -218,27 +221,32 @@ pre {
   list-style: none;
   margin-left: 0; }
 
-.footer-col-wrapper {
+.footer-wrapper {
   font-size: 15px;
   color: #828282;
   text-align: center;
+  position: relative;
   min-width: 20px;
   margin-left: -15px; }
 
-.footer-col {
+.project-col {
+  position: relative;
   float: left;
   margin-bottom: 15px;
   padding-left: 15px; }
 
-.footer-col-1 {
+.project-col-1 {
+  position: relative;
   width: -webkit-calc(32% - (30px / 2));
   width: calc(32% - (30px / 2)); }
 
-.footer-col-2 {
+.project-col-2 {
+  position: relative;
   width: -webkit-calc(32% - (30px / 2));
   width: calc(32% - (30px / 2)); }
 
-.footer-col-3 {
+.project-col-3 {
+  position: relative;
   width: -webkit-calc(32% - (30px / 2));
   width: calc(32% - (30px / 2)); }
 
