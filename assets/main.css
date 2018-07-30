@@ -198,6 +198,9 @@ pre {
   top: 0px;
   z-index: -1; }
 
+.foldtext {
+  text-align: center;
+}
 
 /**
  * Site footer
