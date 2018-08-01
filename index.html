@@ -43,7 +43,7 @@ body, html {
     min-height: 400px;
 }
 
-.w3-wide {letter-spacing: 10px;}
+.w3-wide {letter-spacing: 6px;}
 .w3-hover-opacity {cursor: pointer;}
 
 /* Turn off parallax scrolling for tablets and phones */
@@ -95,7 +95,6 @@ body, html {
 
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
-      <!-- <p><b><i class="fa fa-user w3-margin-right"></i>This is me.</b></p> -->
       <img src="http://gdurl.com/iIr7" class="w3-round w3-image w3-opacity-off w3-hover-opacity" alt="Photo of Me" width="500" height="333">
     </div>
 
@@ -234,7 +233,7 @@ function myMap()
   myCenter=new google.maps.LatLng(39.764219, -105.021127);
   var mapOptions= {
     center:myCenter,
-    zoom:12, scrollwheel: false, draggable: false,
+    zoom:12, scrollwheel: true, draggable: true,
     mapTypeId:google.maps.MapTypeId.ROADMAP
   };
   var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
