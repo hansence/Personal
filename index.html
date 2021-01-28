@@ -3,43 +3,58 @@
 <title>Cecilia Hansen</title>
 <meta charset="UTF-8">
 <meta name="description" content="Cecilia Hansen's personal website. Read about me and see what I'm working on.">
-<meta name="keywords" content="HTML,CSS, Denver, Colorado, Virginia, Cecilia, Hansen, business analyst, design, web, develop, software, manage">
+<meta name="keywords" content="HTML,CSS, Denver, Colorado, Fredericksburg, Virginia, Cecilia, Hansen, business analyst, product analyst, product owner, product manager, design, web, desktop, mobile, application, develop, software, manage">
 <meta name="author" content="Cecilia Hansen">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
     height: 100%;
-    color: #777;
+    color: #393939;
     line-height: 1.8;
 }
 
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: fixed;
-    background-position: center;
+    background-attachment: scroll;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 /* First image (Logo. Full height) */
-.bgimg-1 {
-    background-image: url('https://i.ytimg.com/vi/mzuxXABkqeo/maxresdefault.jpg');
-    min-height: 100%;
+/* .bgimg-1 {
+    background-image: url('https://i.ibb.co/WD2Pj3f/Site-top-bg.jpg');
+    min-height: 80%;
+}
+https://i.ibb.co/dfHNQrp/Site-top-bg2.png
+https://i.ibb.co/r78LCRr/Site-top-bg2.jpg
+https://i.ibb.co/XXx6Jtz/Site-top-bg2.jpg
+*/
+		.bgimg-1 {
+		background-image: url('https://blogsimages.adobe.com/creative/files/2019/06/AdobeStock_227207295.jpeg');
+		min-height: 70%;
+    border: 43px solid white;
 }
 
-/* Second image (Portfolio) */
+
+/* Second image (Experience) */
 .bgimg-2 {
     background-image: url("https://images7.alphacoders.com/795/thumb-1920-795336.jpg");
     min-height: 400px;
 }
 
-/* Third image (Contact) */
+/* Third image (Let's Connect) */
 .bgimg-3 {
-    background-image: url("https://20dqe434dcuq54vwy1wai79h-wpengine.netdna-ssl.com/wp-content/uploads/2017/07/Denver-OutThere-Colorado-1024x465.jpg");
+    background-image: url("https://www.jld.org/wp-content/uploads/denver-skyline_header.png");
     min-height: 400px;
 }
 
@@ -63,7 +78,7 @@ body, html {
     </a>
     <a href="#home" class="w3-bar-item w3-button">Home.</a>
     <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> About.</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Portfolio.</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Experience.</a>
     <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> Contact.</a>
     <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-white">
       <i class="fa fa-search"></i> -->
@@ -80,43 +95,50 @@ body, html {
 </div>
 
 <!-- First Parallax Image with Logo -->
-<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+<div class="bgimg-1 w3-display-container" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
-    <img src="http://gdurl.com/kjQ0">
   </div>
 </div>
 
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">About.</h3>
+  <!-- <h3 class="w3-center">About.</h3>
   <p class="w3-center"><em>This is me.</em></p>
 
-  <p>Welcome! Thanks for visiting my website. Take a look around to learn about me and what I'm working on.</p>
+  <p>Welcome! Thanks for visiting my website. Take a look around to learn about me and what I'm working on.</p> -->
 
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
-      <img src="http://gdurl.com/iIr7" class="w3-round w3-image w3-opacity-off w3-hover-opacity" alt="Photo of Me" width="500" height="333">
+      <img src="poppy.jpeg" class="w3-round w3-image w3-opacity-off w3-hover-opacity" alt="Photo of Me" width="300">
     </div>
 
     <!-- Hide this text on small devices -->
     <div class="w3-col m6 w3-hide-small w3-padding-large">
-        <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <h3>About.</h3>
+        <p>Hello! Name is Cecilia. I'm from the DC area and moved to Denver shortly after college
+          in the spring of 2017. I’m passionate about adventure, personal development, and solving
+          problems to better the world we live in. I'd love learning about physical and mental health,
+          ethical eating, cutting edge technologies, and environmental sustainability. Some of my
+          hobbies include horseback riding, hockey, snowboarding, and camping. I also just adopted a dog!
+        </p>
+        <p>Drop me a line if you want to chat. :)
+        </p>
     </div>
   </div>
-  <p class="w3-large w3-center w3-padding-16">I'm really good at:</p>
-  <p class="w3-wide w3-half m3"><i class="fa fa-line-chart"></i>skill 1<br><br>
+
+
+
   <!-- <div class="w3-light-grey">
     <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
-  </div> -->
-  <i class="fa fa-bug"></i>skill 2<br><br>
-
+  </div>
+	<p class="w3-large w3-center w3-padding-16">I'm really good at:</p>
+	<p class="w3-wide w3-half m3"><i class="fa fa-line-chart"></i>skill 1<br><br>
+	<i class="fa fa-bug"></i>skill 2<br><br>
   <p class="w3-wide w3-right" align="right">skill 3<i class="fa fa-comments-o"></i><br><br>
-  skill 4<i class="fa fa-laptop"></i></p>
+  skill 4<i class="fa fa-laptop"></i></p> -->
 </div>
 
-<!-- grey bar with stats (20 clients, etc.)
+ <!-- grey bar with stats (20 clients, etc.)
 <div class="w3-row w3-center w3-dark-grey w3-padding-16">
   <div class="w3-quarter w3-section">
     <span class="w3-xlarge">#</span><br>
@@ -136,42 +158,43 @@ body, html {
   </div>
 </div> -->
 
-<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+<!-- Grey bar with link -->
+<!--<div class="w3-row w3-center w3-dark-grey w3-padding-6">
   <div class="w3-section">
     <span class="w3-large"><a href="CH_Resume.pdf" target="_blank">View Resume.</a></span>
   </div>
-</div>
+</div> -->
 
 <!-- Second Parallax Image with Portfolio Text -->
 <div class="bgimg-2 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">Portfolio.</span>
+    <span class="w3-xxlarge w3-text-white w3-wide">Experience.</span>
   </div>
 </div>
 
-<!-- Container (Portfolio Section) -->
+<!-- Container (Portfolio Section)
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
   <h3 class="w3-center">See my work.</h3>
-  <p class="w3-center"><em>Here are some of my latest projects.</em></p><br>
+  <p class="w3-center"><em>Here are some of my latest projects.</em></p><br> -->
 
   <!-- Responsive Grid. Two columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center">
-    <div class="w3-half m3">
+    <div class="w3-third m3">
+      <p>Management</p>
       <img src="http://lifespantherapies.com/wp-content/uploads/2013/06/tent-camping-200x200.jpg" style="width:200px" onclick="location.href='camping.html'" class="w3-hover-opacity" alt="Camping">
-      <p>Camping Reservation UX</p>
     </div>
 
-    <div class="w3-half m3">
+    <div class="w3-third m3">
+      <p>Business</p>
       <img src="https://www.msevanslaw.com/wp-content/uploads/2017/11/liability-waivers-in-the-horse-industry-200x200.jpg" style="width:200px" onclick="location.href='barn.html'" class="w3-hover-opacity" alt="Barn">
-      <p>Barn Finder App</p>
+    </div>
+
+    <div class="w3-third m3">
+      <p>Technical</p>
+      <img src="http://blog.uvm.edu/phines/files/2014/11/200.png" style="width:200px" onclick="onClick(this)" class="w3-hover-opacity" alt="Placeholder">
     </div>
 
     <!-- <div class="w3-half m3">
-      <img src="http://blog.uvm.edu/phines/files/2014/11/200.png" style="width:200px" onclick="onClick(this)" class="w3-hover-opacity" alt="Placeholder">
-      <p>Title</p>
-    </div>
-
-    <div class="w3-half m3">
       <img src="http://blog.uvm.edu/phines/files/2014/11/200.png" style="width:200px" onclick="onClick(this)" class="w3-hover-opacity" alt="Placeholder">
       <p>Title</p>
     </div> -->
@@ -189,18 +212,25 @@ body, html {
     <p id="caption" class="w3-opacity w3-large"></p>
   </div>
 </div>
-
+<br><br><br>
 <!-- Third Parallax Image with Portfolio Text -->
 <div class="bgimg-3 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-white w3-wide">Contact.</span>
+     <span class="w3-xxlarge w3-text-white w3-wide">Let's Connect.</span>
   </div>
 </div>
 
+
 <!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">Let's talk.</h3>
-  <p class="w3-center"><em>Have feedback? Let me hear it.</em><br><br>
+<div class="w3-content w3-container w3-center" id="contact">
+  <!-- <h3 class="w3-center">Reach Out.</h3>
+  <p class="w3-center"><em>Have feedback? Let me hear it.</em><br><br> -->
+
+  <div class="w3-row w3-padding-32 w3-section">
+      <!-- Add Google Maps -->
+      <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>
+  </div>
+
     <!-- Contact Icons and Links -->
     <!-- <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Denver, US
     <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br> -->
@@ -209,13 +239,6 @@ body, html {
     <a href="https://www.instagram.com/ceciliahansen/"><i class="fa fa-instagram fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i></a>
     <a href="https://www.linkedin.com/in/cecilia-hansen-18686354/"><i class="fa fa-linkedin fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i></a>
   </p>
-
-  <div class="w3-row w3-padding-32 w3-section">
-
-      <!-- Add Google Maps -->
-      <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>
-
-  </div>
 </div>
 
 <!-- Footer -->
@@ -230,7 +253,7 @@ body, html {
 <script>
 function myMap()
 {
-  myCenter=new google.maps.LatLng(39.764219, -105.021127);
+  myCenter=new google.maps.LatLng(39.758598, -105.001143);
   var mapOptions= {
     center:myCenter,
     zoom:12, scrollwheel: true, draggable: true,
