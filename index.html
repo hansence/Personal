@@ -40,19 +40,25 @@ body, html {
 */
 
 .bgimg-1 {
-    background-image: url('https://i.pinimg.com/originals/51/95/eb/5195ebb8c5f9772deda82aa2937134d3.jpg');
+    background-image: url("foldbg.jpg");
     min-height: 100%;
 }
 
-/* Second image (Experience) */
+/* Second image (Travel Photos) */
 .bgimg-2 {
-    background-image: url("https://images7.alphacoders.com/795/thumb-1920-795336.jpg");
+    background-image: url("webpage bg2.jpg");
     min-height: 170px;
 }
 
-/* Third image (Let's Connect) */
+/* Third image (Horse Photos) */
 .bgimg-3 {
-    background-image: url("https://www.jld.org/wp-content/uploads/denver-skyline_header.png");
+    background-image: url("horsebanner.jpeg");
+    min-height: 170px;
+}
+
+/* Fourth image (Contact) */
+.bgimg-4 {
+    background-image: url("webpage bg3.jpg");
     min-height: 170px;
 }
 
@@ -65,6 +71,53 @@ body, html {
         background-attachment: scroll;
     }
 }
+
+div.gallery {
+  
+}
+
+div.gallery:hover {
+  
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 20px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 </style>
 <body>
 
@@ -74,9 +127,10 @@ body, html {
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <a href="#home" class="w3-bar-item w3-button">Home.</a>
+    <a href="#home" class="w3-bar-item w3-button">Home</a>
     <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> About</a>
-    <a href="#experience" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Experience</a>
+    <a href="#travel" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Travel Photos</a>
+    <a href="#horse" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Equestrian Photos</a>
     <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> Contact</a>
     <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-white">
       <i class="fa fa-search"></i> -->
@@ -86,13 +140,14 @@ body, html {
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
     <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">About</a>
-    <a href="#experience" class="w3-bar-item w3-button" onclick="toggleFunction()">Experience</a>
+    <a href="#travel" class="w3-bar-item w3-button" onclick="toggleFunction()">Travel Photos</a>
+    <a href="#horse" class="w3-bar-item w3-button" onclick="toggleFunction()">Equestrian Photos</a>
     <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">Contact</a>
     <!-- <a href="#" class="w3-bar-item w3-button">Search.</a> -->
   </div>
 </div>
 
-<!-- First Parallax Image with Logo -->
+<!-- First Parallax with fold section -->
 <div class="bgimg-1 w3-display-container" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
   </div>
@@ -100,9 +155,7 @@ body, html {
 
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
-  <!-- <h3 class="w3-center">About.</h3>
-  <p class="w3-center"><em>This is me.</em></p>
-
+  <!-- <h3 class="w3-center">About Me.</h3> 
   <p>Welcome! Thanks for visiting my website. Take a look around to learn about me and what I'm working on.</p> -->
 
   <div class="w3-row">
@@ -122,45 +175,7 @@ body, html {
         </p>
     </div>
   </div>
-
-
-
-  <!-- <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
-  </div>
-	<p class="w3-large w3-center w3-padding-16">I'm really good at:</p>
-	<p class="w3-wide w3-half m3"><i class="fa fa-line-chart"></i>skill 1<br><br>
-	<i class="fa fa-bug"></i>skill 2<br><br>
-  <p class="w3-wide w3-right" align="right">skill 3<i class="fa fa-comments-o"></i><br><br>
-  skill 4<i class="fa fa-laptop"></i></p> -->
 </div>
-
- <!-- grey bar with stats (20 clients, etc.)
-<div class="w3-row w3-center w3-dark-grey w3-padding-16">
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">#</span><br>
-    Stat
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">#</span><br>
-    Stat
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">#</span><br>
-    Stat
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">#</span><br>
-    Stat
-  </div>
-</div> -->
-
-<!-- Grey bar with link -->
-<!--<div class="w3-row w3-center w3-dark-grey w3-padding-6">
-  <div class="w3-section">
-    <span class="w3-large"><a href="CH_Resume.pdf" target="_blank">View Resume.</a></span>
-  </div>
-</div> -->
 
 <!-- Second Parallax Image with Travel Photos Text -->
 <div class="bgimg-2 w3-display-container w3-opacity-min">
@@ -169,34 +184,180 @@ body, html {
   </div>
 </div>
 
-<!-- Container (Travel Photos Section)
-<div class="w3-content w3-container w3-padding-64" id="Travel Photos">
-  <h3 class="w3-center">See my work.</h3>
+<!-- Container (Travel Photos Section) -->
+<div class="w3-container w3-padding-64" id="travel">
+ <!--  <h3 class="w3-center">See my work.</h3>
   <p class="w3-center"><em>Here are some photos from my travels</em></p><br> -->
+  
+  <br><br>
 
-  <!-- Responsive Grid. Two columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center">
-    <p><p>
-    <div class="w3-third m3">
-      <img src="swisswindow.jpg" style="width:400px" class="w3-hover-opacity" alt="Switzerland Window">
+  <!-- Responsive photo gallery -->
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="swisswindow.jpg">
+        <img src="swisswindow.jpg" class="w3-hover-opacity" alt="Switzerland Window">
+      </a>
+      <div class="desc">Interlaken, Switzerland - 2021</div>
     </div>
-
-    <div class="w3-third m3">
-      <img src="swissflower.jpeg" style="width:400px" class="w3-hover-opacity" alt="Switzerland Flower Box">
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="swissflower.jpeg">
+        <img src="swissflower.jpeg" class="w3-hover-opacity" alt="Switzerland Flower Box">
+      </a>
+      <div class="desc">Harder Klum<br>
+        Interlaken, Switzerland - 2021</div>
     </div>
-
-    <div class="w3-third m3">
-      <img src="italyroad.jpeg" style="width:400px" class="w3-hover-opacity" alt="Italy Cliffside Road">
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="italyroad.jpeg">
+        <img src="italyroad.jpeg" class="w3-hover-opacity" alt="Italy Cliffside Road">
+      </a>
+      <div class="desc">Sorrento, Italy - 2021</div>
     </div>
-
-    <!-- <div class="w3-half m3">
-      <img src="http://blog.uvm.edu/phines/files/2014/11/200.png" style="width:200px" onclick="onClick(this)" class="w3-hover-opacity" alt="Placeholder">
-      <p>Title</p>
-    </div> -->
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="amore.jpeg">
+        <img src="amore.jpeg" class="w3-hover-opacity" alt="Amore Steps">
+      </a>
+      <div class="desc">Napoli, Italy - 2021</div>
+    </div>
   </div>
 
-    <!--<button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">See More.</button> -->
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="bwcastle.jpeg">
+        <img src="bwcastle.jpeg" class="w3-hover-opacity" alt="B&W Castle">
+      </a>
+      <div class="desc">Edinburgh, Scotland - 2023</div>
+    </div>
   </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="scotdog.jpeg">
+        <img src="scotdog.jpeg" class="w3-hover-opacity" alt="Scotland Dog">
+      </a>
+      <div class="desc">Conic Hill, Scotland - 2023</div>
+    </div>
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="canadablue.JPG">
+        <img src="canadablue.JPG" class="w3-hover-opacity" alt="Canada Water">
+      </a>
+      <div class="desc">Near Banff, Canada - 2024</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="wpwindows.jpeg">
+        <img src="wpwindows.jpeg" class="w3-hover-opacity" alt="Winter Park View">
+      </a>
+      <div class="desc">Granby, CO - 2020</div>
+    </div>
+  </div>
+
+  <div class="clearfix"></div>
+</div>
+
+<!-- Third Parallax Image with Equestrian Photos Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">Equestrian Photos</span>
+  </div>
+</div>
+
+<!-- Container (Equestrian Photos Section) -->
+<div class="w3-container w3-padding-64" id="horse">  
+   <br><br>
+
+<!-- Responsive photo gallery -->
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="horse1.jpeg">
+      <img src="horse1.jpeg" class="w3-hover-opacity" alt="Horse Show Pic">
+    </a>
+    <div class="desc">Colorado Horse Park<br>
+                      Autumn in the Rockies 2024 <br>
+                      Hunter class</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="horse2.jpeg">
+      <img src="horse2.jpeg" class="w3-hover-opacity" alt="Horse Show Pic">
+    </a>
+    <div class="desc">Colorado Horse Park<br>
+      Autumn in the Rockies 2024 <br>
+      Hunter class</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="horse3.jpeg">
+      <img src="horse3.jpeg" class="w3-hover-opacity" alt="Horse Show Pic">
+    </a>
+    <div class="desc">Colorado Horse Park<br>
+      Autumn in the Rockies 2024 <br>
+      Hunter class</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="horse4.jpeg">
+      <img src="horse4.jpeg" class="w3-hover-opacity" alt="Horse Show Pic">
+    </a>
+    <div class="desc">Colorado Horse Park<br>
+      Autumn in the Rockies 2024 <br>
+      Hunter class</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="horse5.jpeg">
+      <img src="horse5.jpeg" class="w3-hover-opacity" alt="Horse Show Pic">
+    </a>
+    <div class="desc">Colorado Horse Park<br>
+      Autumn in the Rockies 2024 <br>
+      Hunter class</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="horse6.jpeg">
+      <img src="horse6.jpeg" class="w3-hover-opacity" alt="Horse Show Pic">
+    </a>
+    <div class="desc">Colorado Horse Park<br>
+      Autumn in the Rockies 2024 <br>
+      Show Jumping</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="horse7.jpeg">
+      <img src="horse7.jpeg" class="w3-hover-opacity" alt="Horse Show Pic">
+    </a>
+    <div class="desc">Colorado Horse Park<br>
+      Autumn in the Rockies 2024 <br>
+      Show Jumping</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
 </div>
 
 <!-- Modal for full size images on click-->
@@ -207,9 +368,10 @@ body, html {
     <p id="caption" class="w3-opacity w3-large"></p>
   </div>
 </div>
-<br><br><br>
-<!-- Third Parallax Image with Contact Text -->
-<div class="bgimg-3 w3-display-container w3-opacity-min">
+<br>
+
+<!-- Fourth Parallax Image with Contact Text -->
+<div class="bgimg-4 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
      <span class="w3-xxlarge w3-text-white w3-wide">Contact</span>
   </div>
