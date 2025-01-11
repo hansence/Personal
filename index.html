@@ -10,12 +10,17 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap" rel="stylesheet">
+
 <head>
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+h1,h2,h3,h4,h5,h6 {font-family: "Gilda Display", serif;}
+body {font-family: "Lato", sans-serif;}
 body, html {
     height: 100%;
     color: #393939;
@@ -180,7 +185,7 @@ div.desc {
 <!-- Second Parallax Image with Travel Photos Text -->
 <div class="bgimg-2 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">Travel Photos</span>
+    <span class="w3-xxlarge w3-text-white w3-wide"><h1>Travel Photos</h1></span>
   </div>
 </div>
 
@@ -271,7 +276,7 @@ div.desc {
 <!-- Third Parallax Image with Equestrian Photos Text -->
 <div class="bgimg-3 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">Equestrian Photos</span>
+    <span class="w3-xxlarge w3-text-white w3-wide"><h1>Equestrian Photos</h1></span>
   </div>
 </div>
 
@@ -373,7 +378,7 @@ div.desc {
 <!-- Fourth Parallax Image with Contact Text -->
 <div class="bgimg-4 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-white w3-wide">Contact</span>
+     <span class="w3-xxlarge w3-text-white w3-wide"><h1>Contact</h1></span>
   </div>
 </div>
 
@@ -410,7 +415,7 @@ div.desc {
 <script>
 function myMap()
 {
-  myCenter=new google.maps.LatLng(39.758598, -105.001143);
+  myCenter=new google.maps.LatLng(39.758057, -105.022821);
   var mapOptions= {
     center:myCenter,
     zoom:12, scrollwheel: true, draggable: true,
@@ -423,7 +428,10 @@ function myMap()
   });
   marker.setMap(map);
 }
+</script>
 
+
+<script>
 // Modal Image Gallery
 function onClick(element) {
   document.getElementById("img01").src = element.src;
@@ -453,12 +461,12 @@ function toggleFunction() {
     }
 }
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-Fl3W4WCHSIPU3QbI5S_G1m-wo9JsEoY&callback=myMap"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAk3LaFpWYNqqFBhqD7OZhNMvvdqtKuQbY&callback=myMap"></script>
 <!--
 To use this code on your website, get a free API key from Google.
 Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
-My key = AIzaSyA-Fl3W4WCHSIPU3QbI5S_G1m-wo9JsEoY
-test
+My key = AIzaSyAk3LaFpWYNqqFBhqD7OZhNMvvdqtKuQbY
 -->
 
 </body>
