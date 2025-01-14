@@ -5,17 +5,18 @@
 <meta name="description" content="Cecilia Hansen's personal website. Read about me and see what I'm working on.">
 <meta name="keywords" content="HTML, CSS, Denver, Colorado, Fredericksburg, Virginia, Cecilia, Hansen, business, analyst, owner, manager, project, design, web, desktop, mobile, application, develop, software, manage">
 <meta name="author" content="Cecilia Hansen">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap">
 
 <head>
   <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <style>
@@ -28,22 +29,14 @@ body, html {
 }
 
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: scroll;
-    background-position: top;
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
+} 
 
-/* First image (Logo. Full height) */
-/*
-.bgimg-1 {
-		background-image: url('https://blogsimages.adobe.com/creative/files/2019/06/AdobeStock_227207295.jpeg');
-		min-height: 70%;
-    border: 43px solid white;
-}
-*/
-
+/* First image (Landing Image) */
 .bgimg-1 {
     background-image: url("foldbg.jpg");
     min-height: 100%;
@@ -142,10 +135,10 @@ div.desc {
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <a href="#home" class="w3-bar-item w3-button">Home</a>
+    <a href="#home" class="w3-bar-item w3-button"><i class="fa fa-home"></i>Home</a>
     <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> About</a>
-    <a href="#travel" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Travel Photos</a>
-    <a href="#horse" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Equestrian Photos</a>
+    <a href="#travel" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-photo"></i> Travel Photos</a>
+    <a href="#horse" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-horse-head"></i> Equestrian Photos</a>
     <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> Contact</a>
     <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-white">
       <i class="fa fa-search"></i> -->
@@ -213,6 +206,10 @@ div.desc {
       <div class="desc">Interlaken, Switzerland - 2021</div>
     <img src="bwcastle.jpeg" class="w3-hover-opacity" alt="B&W Castle">
       <div class="desc">Edinburgh, Scotland - 2023</div>
+    <img src="wpwindows.jpeg" class="w3-hover-opacity" alt="Winter Park View">
+      <div class="desc">Granby, CO - 2020</div>
+    <img src="abasin.jpg" class="w3-hover-opacity" alt="Ski Chairlift">
+      <div class="desc">Arapahoe Basin, CO - 2021</div>
   </div>
 
   <div class="column">
@@ -221,20 +218,38 @@ div.desc {
         Interlaken, Switzerland - 2021</div>
     <img src="scotdog.jpeg" class="w3-hover-opacity" alt="Scotland Dog">
        <div class="desc">Conic Hill, Scotland - 2023</div>
+    <img src="canadablue.JPG" class="w3-hover-opacity" alt="Canada Water">
+       <div class="desc">Near Banff, Canada - 2024</div>
+    <img src="cbcabin.jpeg" class="w3-hover-opacity" alt="Abandoned Cabin">
+       <div class="desc">Near Crested Butte, CO - 2023</div>
+    <img src="campfireblur.JPG" class="w3-hover-opacity" alt="Blurry Campfire">
+       <div class="desc">Near Cheyenne, WY - 2023</div>
   </div>
 
   <div class="column">
     <img src="italyroad.jpeg" class="w3-hover-opacity" alt="Italy Cliffside Road">
      <div class="desc">Sorrento, Italy - 2021</div>
-    <img src="wpwindows.jpeg" class="w3-hover-opacity" alt="Winter Park View">
-     <div class="desc">Granby, CO - 2020</div>
+    <img src="sdtidepool.jpeg" class="w3-hover-opacity" alt="San Diego Tide Pools">
+     <div class="desc">San Diego, CA - 2022</div>
+    <img src="sdocean.jpeg" class="w3-hover-opacity" alt="San Diego Ocean">
+     <div class="desc">San Diego, CA - 2022</div>
+    <img src="moon.JPG" class="w3-hover-opacity" alt="Full Moon">
+     <div class="desc">Golden, CO - 2023</div>
+    <img src="cbroadside.jpeg" class="w3-hover-opacity" alt="Roadside Mountain View">
+     <div class="desc">Near Crested Butte, CO - 2023</div>
   </div>
 
   <div class="column">
     <img src="amore.jpeg" class="w3-hover-opacity" alt="Amore Steps">
       <div class="desc">Napoli, Italy - 2021</div>
-    <img src="canadablue.JPG" class="w3-hover-opacity" alt="Canada Water">
-      <div class="desc">Near Banff, Canada - 2024</div>
+    <img src="sdtrees.jpeg" class="w3-hover-opacity" alt="CA Sunset Palm Trees">
+      <div class="desc">La Jolla, CA - 2022</div>
+    <img src="sdsunset.jpeg" class="w3-hover-opacity" alt="San Diego Sunset">
+      <div class="desc">San Diego, CA - 2022</div>
+    <img src="aspentrees.jpeg" class="w3-hover-opacity" alt="Aspen Trees">
+      <div class="desc">Near Crested Butte, CO - 2023</div>
+    <img src="cosunset.jpeg" class="w3-hover-opacity" alt="Colorado Sunset">
+      <div class="desc">Somewhere in Colorado - 2023</div>
   </div>
 </div>
 
