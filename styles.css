@@ -6,7 +6,7 @@ body, html {
     color: #393939;
  /* color: #777;  */
     line-height: 1.8;
-
+   }
 
     .gilda-display-regular {
       font-family: "Gilda Display", serif;
@@ -63,4 +63,3 @@ body, html {
  .fas,
  .fa-solid {
    font-weight: 900; }
-}
