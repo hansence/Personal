@@ -29,19 +29,22 @@ body, html {
     line-height: 1.8;
 }
 
+/* First image (Landing Image) */
+.bgimg-1 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("header background.jpg");
+    min-height: 100%;
+}
+
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+.bgimg-2, .bgimg-3, .bgimg-4 {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 } 
-
-/* First image (Landing Image) */
-.bgimg-1 {
-    background-image: url("comboheader.png");
-    min-height: 100%;
-}
 
 /* Second image (Travel Photos) */
 .bgimg-2 {
@@ -157,11 +160,20 @@ div.desc {
   </div>
 </div>
 
-<!-- First Parallax with fold section -->
+<!-- Header section -->
 <div class="bgimg-1 w3-display-container" id="home">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-  </div>
-</div>
+  <!-- <div class="w3-display-middle" style="white-space:nowrap;"> -->
+   <br><br><br><br><br><br><br><br><br><br>
+      <div class="scroll-container">
+        <img src="italyroad.jpeg" height="700" alt="Italy road">
+        <img src="horseshow3.jpeg" height="700" alt="Horse Show">
+        <img src="sdtrees.jpeg" height="700" alt="Palm Trees">
+        <img src="aspentrees2.jpeg" height="700" alt="Aspen Trees">
+      </div>
+  <!-- </div> -->
+ </div>
+  
+
 
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">

@@ -61,3 +61,20 @@ body, html {
  .fas,
  .fa-solid {
    font-weight: 900; }
+
+
+   div.scroll-container {
+      overflow-x: auto;
+      white-space: nowrap;
+      padding: 10px;
+         
+    }
+    
+    div.scroll-container img {
+      padding: 10px;
+      flex-wrap: nowrap;
+    }
+
+    .scroll-container::-webkit-scrollbar {
+      display: none;
+    }
