@@ -64,7 +64,8 @@ body, html {
 
 :root, :host {
    --fa-style-family-classic: 'Font Awesome 6 Free';
-   --fa-font-solid: normal 900 1em/1 'Font Awesome 6 Free'; }
+   --fa-font-solid: normal 900 1em/1 'Font Awesome 6 Free';
+   --fa-font-brands: normal 900 1em/1 'Font Awesome 6 Free'; }
  
  @font-face {
    font-family: 'Font Awesome 6 Free';
@@ -85,5 +86,3 @@ body, html {
  .fa-solid,
  .fa-brands {
    font-weight: 900; }
-
-
