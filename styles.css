@@ -47,23 +47,7 @@ body, html {
       }
     }
 
-:root, :host {
-   --fa-style-family-classic: 'Font Awesome 6 Free';
-   --fa-font-solid: normal 900 1em/1 'Font Awesome 6 Free'; }
- 
- @font-face {
-   font-family: 'Font Awesome 6 Free';
-   font-style: normal;
-   font-weight: 900;
-   font-display: block;
-   src: url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.ttf") format("truetype"); }
- 
- .fas,
- .fa-solid {
-   font-weight: 900; }
-
-
-   div.scroll-container {
+    div.scroll-container {
       overflow-x: auto;
       white-space: nowrap;
       padding: 10px;
@@ -75,6 +59,32 @@ body, html {
       flex-wrap: nowrap;
     }
 
-    .scroll-container::-webkit-scrollbar {
+    div.scroll-container::-webkit-scrollbar {
       display: none;
     }
+
+:root, :host {
+   --fa-style-family-classic: 'Font Awesome 6 Free';
+   --fa-font-solid: normal 900 1em/1 'Font Awesome 6 Free'; }
+ 
+ @font-face {
+   font-family: 'Font Awesome 6 Free';
+   font-style: normal;
+   font-weight: 900;
+   font-display: block;
+   src: url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.ttf") format("truetype"); }
+
+
+@font-face {
+   font-family: 'Font Awesome 6 Free';
+   font-style: normal;
+   font-weight: 900;
+   font-display: block;
+   src: url("../webfonts/fa-brands-900.woff2") format("woff2"), url("../webfonts/fa-brands-900.ttf") format("truetype"); }
+ 
+ .fas,
+ .fa-solid,
+ .fa-brands {
+   font-weight: 900; }
+
+
