@@ -1,28 +1,91 @@
+/* First image (Landing Image) */
+.bgimg-1 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("header background.jpg");
+    min-height: 100%;
+}
+
+/* Create a Parallax Effect */
+.bgimg-2, .bgimg-3, .bgimg-4 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+
+/* Second image (Travel Photos) */
+.bgimg-2 {
+    background-image: url("webpage bg2.jpg");
+    min-height: 170px;
+}
+
+/* Third image (Horse Photos) */
+.bgimg-3 {
+    background-image: url("horseshow2.jpeg");
+    min-height: 170px;
+}
+
+/* Fourth image (Contact) */
+.bgimg-4 {
+    background-image: url("skyline.png");
+    min-height: 170px;
+}
+
+.w3-wide {letter-spacing: 6px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-2, .bgimg-3, .bgimg-4 {
+        background-attachment: scroll;
+    }
+    .bgimg-1 {
+      max-width: 100%;
+    }
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+  padding: 40px;
+}
+
+div.desc {
+  padding: 10px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Modal images */
+
+/* tbd*/
+
+/* Font styling */
+h1,h2,h3,h4,h5,h6 {font-family: "Arbotek-rounded", sans-serif;}
 body {font-family: "Lato", sans-serif;}
 body, html {
     height: 100%;
     color: #393939;
- /* color: #777;  */
     line-height: 1.8;
-   }
+}
 
-    .gilda-display-regular {
-      font-family: "Gilda Display", serif;
-      font-weight: 400;
-      font-style: normal;
-    }
-
+/* Image gallery styling */
     .row {
       display: flex;
       flex-wrap: wrap;
-      padding: 0 4px;
+      padding: 0 6px;
     }
     
     /* Create four equal columns that sits next to each other */
     .column {
       flex: 25%;
       max-width: 25%;
-      padding: 0 4px;
+      padding: 0 6px;
     }
     
     .column img {
@@ -47,6 +110,8 @@ body, html {
       }
     }
 
+/* Header carousel */
+
     div.scroll-container {
       overflow-x: auto;
       white-space: nowrap;
@@ -61,6 +126,8 @@ body, html {
     div.scroll-container::-webkit-scrollbar {
       display: none;
     }
+
+/* Font Awesome icons */
 
 :root, :host {
    --fa-style-family-classic: 'Font Awesome 6 Free';
@@ -87,6 +154,7 @@ body, html {
  .fa-brands {
    font-weight: 900; }
 
+/* Contact form styling */
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
@@ -121,3 +189,5 @@ input[type=text], select, textarea {
    background-color: #f2f2f2;
    padding: 20px;
  }
+
+ 

@@ -22,111 +22,6 @@
   <meta property="og:image" content="website preview image.jpg" />
 </head>
 
-<style>
-h1,h2,h3,h4,h5,h6 {font-family: "Arbotek-rounded", sans-serif;}
-body {font-family: "Lato", sans-serif;}
-body, html {
-    height: 100%;
-    color: #393939;
-    line-height: 1.8;
-}
-
-/* First image (Landing Image) */
-.bgimg-1 {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("header background.jpg");
-    min-height: 100%;
-}
-
-/* Create a Parallax Effect */
-.bgimg-2, .bgimg-3, .bgimg-4 {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-} 
-
-/* Second image (Travel Photos) */
-.bgimg-2 {
-    background-image: url("webpage bg2.jpg");
-    min-height: 170px;
-}
-
-/* Third image (Horse Photos) */
-.bgimg-3 {
-    background-image: url("horseshow2.jpeg");
-    min-height: 170px;
-}
-
-/* Fourth image (Contact) */
-.bgimg-4 {
-    background-image: url("skyline.png");
-    min-height: 170px;
-}
-
-.w3-wide {letter-spacing: 6px;}
-.w3-hover-opacity {cursor: pointer;}
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
-    .bgimg-2, .bgimg-3, .bgimg-4 {
-        background-attachment: scroll;
-    }
-    .bgimg-1 {
-      max-width: 800px;
-    }
-}
-
-/* div.gallery {
-  
-}
-
-div.gallery:hover {
-  
-}  */
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-  padding: 40px;
-}
-
-div.desc {
-  padding: 10px;
-  text-align: center;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.responsive {
-  padding: 0 20px;
-  float: left;
-  width: 24.99999%;
-}
-
-@media only screen and (max-width: 700px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .responsive {
-    width: 100%;
-  }
-}
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-</style>
 <body>
 
 <!-- Preloader -->
@@ -179,12 +74,10 @@ div.desc {
 
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
-  <!-- <h3 class="w3-center">About Me.</h3> 
-  <p>Welcome! Thanks for visiting my website. Take a look around to learn about me and what I'm working on.</p> -->
 
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
-      <img src="cecilia2.jpg" class="w3-round w3-image w3-opacity-off w3-hover-opacity" alt="Photo of Me" width="300">
+      <img src="cecilia2.png" class="w3-round w3-image w3-opacity-off" alt="Photo of Me" width="300">
     </div>
 
     <!-- Hide this text on small devices -->
@@ -210,10 +103,8 @@ div.desc {
 
 <!-- Container (Travel Photos Section) -->
 <div class="w3-container w3-padding-64">
- <!--  <h3 class="w3-center">See my work.</h3>
-  <p class="w3-center"><em>Here are some photos from my travels</em></p><br> -->
-  
-  <br>
+
+<br>
 
 <!-- Responsive Grid of Travel Photos-->  
 <div class="row">
@@ -273,6 +164,7 @@ div.desc {
     
   </div>
 </div>
+</div>
 
 <!-- Third Parallax Image with Equestrian Photos Text -->
 <div class="bgimg-3 w3-display-container w3-opacity-min" id="horse">
@@ -326,16 +218,7 @@ div.desc {
       <div class="desc">Steeplechase in Virginia - 2011</div>
     </div>
   </div>
-
-<!-- Modal for full size images on click
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
-  </div>
-</div> -->
-<br>
+</div>
 
 <!-- Fourth Parallax Image with Contact Text -->
 <div class="bgimg-4 w3-display-container w3-opacity-min" id="contact">
@@ -396,34 +279,32 @@ div.desc {
 
 <!-- Add Google Maps -->
 <script>
-function myMap()
-{
-  myCenter=new google.maps.LatLng(39.758057, -105.022821);
-  var mapOptions= {
-    center:myCenter,
-    zoom:12, scrollwheel: true, draggable: true,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+  function myMap()
+  {
+    myCenter=new google.maps.LatLng(39.758057, -105.022821);
+    var mapOptions= {
+      center:myCenter,
+      zoom:12, scrollwheel: true, draggable: true,
+      mapTypeId:google.maps.MapTypeId.ROADMAP
+    };
+    var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+  
+    var marker = new google.maps.Marker({
+      position: myCenter,
+    });
+    marker.setMap(map);
+  }
+  </script>
 
-  var marker = new google.maps.Marker({
-    position: myCenter,
-  });
-  marker.setMap(map);
-}
-</script>
-
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAk3LaFpWYNqqFBhqD7OZhNMvvdqtKuQbY&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+My key = AIzaSyAk3LaFpWYNqqFBhqD7OZhNMvvdqtKuQbY
+-->
 
 <script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-// Change style of navbar on scroll
+/* Change style of navbar on scroll */
 window.onscroll = function() {myFunction()};
 function myFunction() {
     var navbar = document.getElementById("myNavbar");
@@ -434,7 +315,7 @@ function myFunction() {
     }
 }
 
-// Used to toggle the menu on small screens when clicking on the menu button
+/* Used to toggle the menu on small screens when clicking on the menu button */
 function toggleFunction() {
     var x = document.getElementById("navDemo");
     if (x.className.indexOf("w3-show") == -1) {
@@ -444,13 +325,6 @@ function toggleFunction() {
     }
 }
 </script>
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAk3LaFpWYNqqFBhqD7OZhNMvvdqtKuQbY&callback=myMap"></script>
-<!--
-To use this code on your website, get a free API key from Google.
-Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
-My key = AIzaSyAk3LaFpWYNqqFBhqD7OZhNMvvdqtKuQbY
--->
 
 </body>
 </html>
