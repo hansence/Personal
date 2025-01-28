@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-<title>Cecilia Hansen</title>
+<title>CH Photography</title>
 <meta charset="UTF-8">
 <meta name="description" content="Cecilia Hansen's personal website. Read about me and see what I'm working on.">
-<meta name="keywords" content="HTML, CSS, Denver, Colorado, Fredericksburg, Virginia, Cecilia, Hansen, business, analyst, owner, manager, project, design, web, desktop, mobile, application, develop, software, manage">
+<meta name="keywords" content="HTML, CSS, Denver, Colorado, Fredericksburg, Virginia, Cecilia, Hansen, business, manager, project, design, web, desktop, mobile, application, develop, software, manage, photography, horse show, equestrian, landscape">
 <meta name="author" content="Cecilia Hansen">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
@@ -14,10 +14,12 @@
 
 <head>
   <link rel="stylesheet" href="styles.css">
+  <form method="post" action="contact.php"></form>
   <script defer src="assets/fontawesome.js"></script>
   <script defer src="assets/solid.js"></script>
   <script defer src="assets/brands.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:image" content="website preview image.jpg" />
 </head>
 
 <style>
@@ -344,28 +346,50 @@ div.desc {
 
 
 <!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-center">
-  <!-- <h3 class="w3-center">Reach Out.</h3>
-  <p class="w3-center"><em>Have feedback? Let me hear it.</em><br><br> -->
-
+<div class="w3-content w3-container">
   <div class="w3-row w3-padding-32 w3-section">
-      <!-- Add Google Maps -->
-      <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>
+
+    <div class="w3-center">
+    <!-- Add Google Maps -->
+    <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div><br>
+
+   <i class="fa-solid fa-map-marker fa-fw w3-hover-text-black w3-xlarge"></i>Denver, CO<br>
+    </div>
+
+    <!-- Contact Form (need paid email service to work)
+    <div class="container" style="width: 100%;">
+      <h3 style="text-align: center;">Write a Message</h3>
+      <form method="post" action="contact.php">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="firstname" placeholder="Your name">
+    
+        <label for="lname">Email Address</label>
+        <input type="text" id="email" name="email" placeholder="Your email address">
+    
+        <label for="subject">Message</label>
+        <textarea id="message" name="message" placeholder="Your message" style="height:100px"></textarea>
+    
+        <input type="send" value="Send">
+      </form>
+    </div> -->
+
   </div>
 
+  <div class="w3-center">
     <!-- Contact Icons and Links -->
-    <i class="fa-solid fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-center"></i>Denver, CO<br><br>
     <!-- <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br> -->
     <a href="mailto:hansence2@gmail.com"><i class="fa-solid fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i></a>
     <!-- <a href="https://www.facebook.com/cecilia.hansen.93"><i class="fa fa-facebook-official fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i></a> -->
     <a href="https://www.instagram.com/ceciliahansen/"><i class="fa-brands fa-instagram fa-fw w3-hover-text-black w3-xlarge w3-margin-center"></i></a>
     <a href="https://www.linkedin.com/in/cecilia-hansen-18686354/"><i class="fa-brands fa-linkedin fa-fw w3-hover-text-black w3-xlarge w3-margin-left"></i></a>
-  </p>
+  </div>
 </div>
+
+<br>
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa-solid fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
   </div>
 </footer>
