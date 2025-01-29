@@ -1,3 +1,12 @@
+/* Font styling */
+h1,h2,h3,h4,h5,h6 {font-family: "Arbotek-rounded", sans-serif;}
+body {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #393939;
+    line-height: 1.8;
+}
+
 /* First image (Landing Image) */
 .bgimg-1 {
     background-position: center;
@@ -36,14 +45,14 @@
 .w3-wide {letter-spacing: 6px;}
 .w3-hover-opacity {cursor: pointer;}
 
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
+/* Turn off parallax scrolling + resize header bg image for mobile */
+@media only screen and (max-width: 620px) {
     .bgimg-2, .bgimg-3, .bgimg-4 {
         background-attachment: scroll;
     }
     .bgimg-1 {
-      max-width: 100%;
-      height: auto;
+      background-position: top;
+      background-size: 375% auto;
     }
 }
 
@@ -65,15 +74,6 @@ div.desc {
 /* Modal images */
 
 /* tbd*/
-
-/* Font styling */
-h1,h2,h3,h4,h5,h6 {font-family: "Arbotek-rounded", sans-serif;}
-body {font-family: "Lato", sans-serif;}
-body, html {
-    height: 100%;
-    color: #393939;
-    line-height: 1.8;
-}
 
 /* Image gallery styling */
     .row {
@@ -111,7 +111,7 @@ body, html {
       }
     }
 
-/* Header carousel */
+/* Header desktop horizontal scroll */
 
     div.scroll-container {
       overflow-x: auto;
@@ -127,6 +127,42 @@ body, html {
     div.scroll-container::-webkit-scrollbar {
       display: none;
     }
+
+/* Add arrow at end of desktop horizontal scroll carousel */
+div.scroll-container:after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 2rem;
+  padding-left: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  content: '\0203A';
+  color: #fff;
+}
+
+/* Carousel styling */
+div.carousel-inner {
+  position: center;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Set conditional for desktop horizontal scroll vs mobile carousel */
+@media only screen and (max-width: 620px) {
+  div.scroll-container {
+    display: none;
+}
+}
+
+@media (min-width: 620px) { 
+  div.carousel {
+    display: none;
+  }
+} 
 
 /* Font Awesome icons */
 
