@@ -134,28 +134,22 @@ div.scroll-container:after {
   right: 0;
   top: 0;
   height: 100%;
-  width: 2rem;
-  padding-left: 0.75rem;
+  width: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 4rem;
+  font-size: 8rem;
   content: '\0203A';
   color: #fff;
-}
-
-/* Carousel styling */
-div.carousel-inner {
-  position: center;
-  align-items: center;
-  justify-content: center;
 }
 
 /* Set conditional for desktop horizontal scroll vs mobile carousel */
 @media only screen and (max-width: 620px) {
   div.scroll-container {
     display: none;
-}
+  }
 }
 
 @media (min-width: 620px) { 
