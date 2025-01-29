@@ -156,6 +156,12 @@ div.scroll-container:after {
   div.carousel {
     display: none;
   }
+  div.carousel-inner {
+    display: none;
+  }
+  div.carousel-indicators {
+    display: none;
+  }
 } 
 
 /* Font Awesome icons */
