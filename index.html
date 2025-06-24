@@ -313,32 +313,6 @@
   </div>
 </footer>
 
-<!-- Add Google Maps -->
-<script>
-  function myMap()
-  {
-    myCenter=new google.maps.LatLng(39.758057, -105.022821);
-    var mapOptions= {
-      center:myCenter,
-      zoom:12, scrollwheel: true, draggable: true,
-      mapTypeId:google.maps.MapTypeId.ROADMAP
-    };
-    var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
-  
-    var marker = new google.maps.Marker({
-      position: myCenter,
-    });
-    marker.setMap(map);
-  }
-  </script>
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAk3LaFpWYNqqFBhqD7OZhNMvvdqtKuQbY&callback=myMap"></script>
-<!--
-To use this code on your website, get a free API key from Google.
-Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
-My key = AIzaSyAk3LaFpWYNqqFBhqD7OZhNMvvdqtKuQbY
--->
-
 <script>
 /* Change style of navbar on scroll */
 window.onscroll = function() {myFunction()};
